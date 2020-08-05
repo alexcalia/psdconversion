@@ -1,0 +1,57 @@
+/* GENERAL STYLINGS */
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        text-transform: uppercase;
+        @include font-styling($special-font,2.2rem,left,24px,1.2px);
+        width: 200px;
+    }
+}
+
+.home-header,
+.contact-header,
+.blog-header {
+    padding-top: 20px;
+}
+
+.contact-header h1,
+.blog-header h1 {
+        padding-top: 120px;
+    }
+
+/********************************
+         Home Header           
+********************************/
+.home-header {
+    @include header-background(url(../assets/header-home.jpg), 700px, cover);
+
+    .wrapper {
+
+        h1 {
+            padding: 30px 0 40px 12%;
+            width: 40%;
+        }
+    } 
+
+    .home-header-couch-image {
+            width: 55%;
+            min-width: 626px;
+        }
+}
+
+/********************************
+         Blog Header           
+********************************/
+.blog-header {
+    @include header-background(url(../assets/blog-image.jpg), 600px, cover);
+}
+
+/********************************
+         Contact Header           
+********************************/
+.contact-header {
+    @include header-background(url(../assets/contact-image.jpg), 550px, cover);
+    
+}

@@ -1,0 +1,78 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    @include font-styling($body-font,2rem,left,32px,2px);
+    background-color: $ice;
+}
+
+.max-width-wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 85%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1 {
+    @include font-styling($h1-font,6.8rem,left,64px);
+    text-transform: uppercase;
+}
+
+h2 {
+    @include font-styling($special-font,3.3rem,left,58px,2.1px);
+    text-transform: uppercase;
+}
+
+h3 {
+    @include font-styling($special-font,2.4rem,left,30px,2.1px);
+    text-transform: uppercase;
+}
+
+a:not(.nav-link):focus {
+    border: 4px solid $yellow;
+}
+
+form button,
+.button {
+    @include font-styling($special-font,2rem,center,32px,1px);
+    background-color: $evergreen;
+    padding: 10px 15px 4px 15px;
+    text-transform: uppercase;
+    color: $white;
+    border: none;
+    transition-duration: 0.3s;
+}
+
+form button:hover,
+form button:focus,
+.button:hover,
+.button:focus {
+    color: $black;
+    background-color: $yellow;
+}
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skip-link:focus {
+    left: 0;
+}

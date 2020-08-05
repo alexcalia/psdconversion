@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Sanctuary Helpers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="blog-body">
+    
+    <div class="max-width-wrapper">
+
+        <header class="blog-header"> <!-- Beginning of the header section -->
+
+            <div class="wrapper">
+                <div class="logo-nav-container">
+                    <p class="logo">Sanctuary Helpers</p>
+                    
+                    <nav> <!-- Navigation bar -->
+
+                        <label for="toggle" class="mobile-ham"><i class="fas fa-bars"></i></label>
+                        <input type="checkbox" class="toggle" id="toggle" />
+                        <ul class="mobile-menu">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./index.html#about">About</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                        
+                        <ul class="nav-bar">
+                            <li><a class="nav-link" href="./index.html"><span class="hover-underline">Home</span></a></li>
+                            <li><a class="nav-link" href="./index.html"><span class="hover-underline">About</span></a></li>
+                            <li><a class="nav-link" href="./blog.html"><span class="primary-underline">Blog</span></a></li>
+                            <li><a class="nav-link" href="./contact.html"><span class="hover-underline">Contact</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <h1>Blog</h1>
+
+            </div>
+        </header> <!-- End of the header section -->
+
+        <main class="blog-main"> <!-- Beginning of the main section -->
+
+            <a href="#maincontent" class="skip-link">Skip to main content.</a> <!-- Main contant skip link -->
+
+            <section class="blog-post"> <!-- Beginning of the blog post section -->
+
+                <div class="blog-post-image"> 
+                    <img src="assets/blog-post-image.jpg" alt="">
+                </div>
+
+                <article class="blog-post-text"> <!-- Beginning of the blog post-->
+                    <h2>Finding the right Pieces for New Space</h2>
+
+                    <p class="blog-date-author"><time datetime="2019-10-5">Monday, October 5th, 2019</time> by <span class="author-bold">Saron</span></p>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio perferendis unde itaque incidunt expedita. Voluptate quibusdam excepturi rerum numquam quos accusamus beatae assumenda officiis vel maxime, dolorem doloribus, qui blanditiis.</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea in ex enim saepe nihil, sapiente voluptatibus atque doloribus. Accusantium, neque ab sit provident nobis molestias unde culpa iure nam similique, repellendus eos consequuntur explicabo possimus.</p>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis sunt sint omnis adipisci praesentium quia? Atque reprehenderit, quas quisquam neque facilis officia aliquid voluptatem eos obcaecati esse consectetur est aliquam sequi ullam nihil blanditiis ipsam? Officia vel tempora itaque, molestiae omnis laboriosam animi temporibus beatae.</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse eveniet necessitatibus! Quidem perferendis eum explicabo. Deserunt quaerat autem fugiat!</p>
+                </article> <!-- End of the blog post -->
+
+                <section class="comments-section"> <!-- Beginning of the comments section -->
+
+                    <h3>Comments:</h3>
+
+                    <div class="comments-container"> <!-- Beginning of the comments container-->
+                        <div class="message-container">
+
+                            <div class="comment-image">
+                                <img src="assets/comment-image.jpg" alt="A headshot of a dark-haired, young man wearing a black shirt.">
+                            </div>
+
+                            <div class="comment-text">
+                                <p><time datetime="2019-10-9">Tuesday October 9th, 2019</time> by Davin</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, est asperiores ipsa incidunt enim veniam voluptatum excepturi aut adipisci molestiae?</p>
+                            </div>
+                        </div>
+
+                        <div class="message-container">
+
+                            <div class="comment-image">
+                                <img src="assets/comment-image2.jpg" alt="A photo of two zebras that are standing beside each other, touching necks.  The zebra on the right is looking at the camera that took this photo.">
+                            </div>
+
+                            <div class="comment-text">
+                                <p><time datetime="2019-10-10">Wednesday October 10th, 2019</time> by Lisa</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque unde nulla velit earum, officiis alias?</p>
+                            </div>
+
+                        </div>
+                    </div> <!-- End of the comments container -->
+
+                    <form class="comments-form"> <!-- Beginning of the comments form -->
+                    
+                        <div class="form-name-container">
+                            <label class="sr-only" for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name">
+                        </div>
+                    
+                        <div class="form-email-container">
+                            <label class="sr-only" for="email">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="Email Address">
+                        </div>
+                    
+                        <div class="form-message-container">
+                            <label class="sr-only" for="message">Comment</label>
+                            <textarea name="message" id="message" placeholder="Comment"></textarea>
+                        </div>
+                    
+                        <button type="submit">Post Comment</button>
+
+                    </form> <!-- End of the comments form -->
+                    
+                    <a class="button posts-button" href="#">Read more</a> <!-- Button for mobile media query-->
+
+                </section> <!-- End of the comments section -->
+            </section> <!-- End of the blog post section -->
+            
+            <section class="aside-container"> <!-- Beginning of the aside section -->
+                <aside> 
+                    <div class="aside-image-container">
+                        <img src="assets/sidebar-image.jpg" alt="A copper-coloured, diamond-shaped, wireframe ceiling fixture.">
+                    </div>
+
+                    <div class="mission-statement">
+
+                        <h3>Our Mission</h3>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, vero?</p>
+                    </div>
+
+                    <div class="recent-posts-container">
+                        <h3>Recent Posts</h3>
+
+                        <ul class="recent-posts-links">
+                            <li><a href="#" class="posts-links">Lorem, ipsum dolor.</a></li>
+                            <li><a href="#">Loem isum dolr it.</a></li>
+                            <li><a href="#">Lorem ium dol sit.</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                        </ul>
+                        
+                    </div>
+                </aside> 
+            </section> <!-- End of the aside section -->
+
+        </main> <!-- End of the main section -->
+
+        <footer class="blog-footer"> <!-- Beginning of the footer section -->
+            <p> Copyright &copy; 2019 Hacker You</p>
+            <a href="https://junocollege.com">Created at Juno College</a>
+        </footer> <!-- End of the footer section -->
+    </div>
+
+    <script src="https://kit.fontawesome.com/eb0dedd964.js" crossorigin="anonymous"></script> <!-- Font Awesome JavaScript-->
+
+</body>
+</html>

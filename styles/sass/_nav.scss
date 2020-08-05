@@ -1,0 +1,68 @@
+nav {
+    text-transform: uppercase;
+    z-index: 10;
+
+    input[type="checkbox"] {
+                display: none;
+    }
+
+    input[type="checkbox"]:checked + .mobile-menu {
+                right: 20px;          
+    }
+
+    .mobile-ham {
+        display: none;
+        font-size: 3.5rem;
+        color: $black;
+        background: none;
+        border: none;
+        padding: 0;
+        right: 25px;
+        position: fixed;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        display: none;
+        top: 70px;
+        right: -300px;
+        list-style-type: none;
+        background-color: $ice;
+        border-radius: 10px;
+        box-shadow: 0px 0px 12px 0px $black;
+        transition-duration: 0.5s;
+
+        a {
+            display: inline-block;
+            width: 200px;
+            color: $black;
+            text-align: center;
+            padding: 15px 0;
+        }
+    }
+
+    .nav-bar {
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+
+        li {
+            .primary-underline {
+                border-bottom: 3px solid $yellow;
+            }
+
+            a {
+                display: inline-block;
+                padding: 15px 24px;
+                @include font-styling($body-font,2rem,center,29px,1.4px,);
+                color: $black;
+                font-weight: 600;
+            }
+        }
+
+        li:hover .hover-underline,
+        li:focus-within .hover-underline {
+            border-bottom: 3px solid $yellow;
+        }
+    }
+}

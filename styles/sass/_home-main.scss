@@ -1,0 +1,173 @@
+/*******************************
+        DISCOVERING SECTION
+*******************************/
+.discovering-section {
+    background-color: $white;
+    padding: 200px 0 110px 0;
+
+    .wrapper {
+        display: flex;
+
+        .discovering-text {
+            flex: 3 1 800px;
+            margin-right: 20px;
+            
+            p {
+            padding: 10px 80px 20px 0;
+            }
+        }
+
+        .discovering-image-container {
+            flex: 1 0 200px;
+
+            img {
+                @include box-shadow-left;
+            }
+        }
+    }
+}
+
+/*******************************
+        GALLERY SECTION
+*******************************/
+.gallery-section .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px 0;
+    column-gap: 30px;
+}
+
+/*******************************
+        ABOUT SECTION
+*******************************/
+.about-section {
+    background-color: $white;
+    padding: 80px 0 100px 0;
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        article {
+            flex: 1 0 500px;
+            margin-bottom: 20px;
+            display: flex;
+
+            .about-text-container {
+                padding-left: 40px;
+            }
+        }
+    }
+}
+
+/* ABOUT ICONS STYLINGS */
+.fa-circle {
+    color: $yellow;
+}
+
+.fa-file, .fa-home, .fa-phone, .fa-users {
+    color: $black;
+    z-index: 5;
+}
+
+.fa-home, .fa-users {
+    padding-left: 10px;
+}
+
+.fa-file {
+    padding-left: 16px;
+}
+
+.fa-phone {
+    padding-left: 13px;
+}
+
+/*******************************
+PROGRAMS AND LOCATIONS SECTION
+*******************************/
+.programs-locations-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15%;
+    padding: 20px 0;
+
+    p {
+        padding-bottom: 20px;
+        max-width: 500px;
+        }
+
+    .programs-article {
+        position: relative;
+        bottom: -100px;
+
+        .programs-text-container {
+            padding-bottom: 80px;
+        }
+
+        .home-right-image {
+            min-width: 300px;
+            img {
+                @include box-shadow-left;
+            }
+        }
+    }
+        
+    .locations-article {
+        position: relative;
+        top: -60px;
+
+        .home-left-image {
+            min-width: 300px;
+            img {
+                @include box-shadow-right;
+            }
+        }
+        .locations-text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-top: 100px;
+
+            h2,
+            p {
+                text-align: right;
+            }
+        }
+    }
+}
+
+/* BANNER IMAGE */
+.banner-image-container {
+    width: 100%;
+    background-image: url(../assets/banner-image.jpg);
+    height: 454px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*******************************
+    SEARCH BY STYLE SECTION
+*******************************/
+.search-style-section{
+    padding: 150px 0;
+    background-color: $white;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            padding-bottom: 20px;
+            text-align: left;
+            max-width: 1000px;
+            align-self: center;
+        }
+    } 
+}

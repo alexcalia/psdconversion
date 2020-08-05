@@ -1,0 +1,425 @@
+/*******************************
+        1336 PX QUERIES
+*******************************/
+@media (max-width: 1336px) {
+
+    /*******************************
+        BLOG QUERIES
+    *******************************/  
+    .blog-post {
+        margin: 0 auto;
+    }
+
+    .aside-container {
+        width: 100%;
+        background: $yellow;
+        padding: 20px 0;
+
+        aside {
+            max-width: 1000px;
+            width: 85%;
+            margin-top: 0;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0;
+
+            .mission-statement {
+                max-width: 250px;
+                padding-right: 0;
+            }
+
+            .recent-posts-container {
+                padding: 0;
+                max-width: 250px;
+            }
+
+            .aside-image-container {
+                max-width: 150px;
+                padding-right: 10px;
+
+                img {
+                    top: 0;
+                }
+            }
+            
+        }
+    }   
+}
+
+/*******************************
+        1139 PX QUERIES
+*******************************/
+@media (max-width: 1139px) {
+
+    /***************************
+        HOME PAGE QUERIES
+    ***************************/
+    .discovering-section {
+        padding: 100px 0 110px 0;
+    }
+
+    .programs-locations-section {
+        grid-gap: 10%;
+    }
+
+    /***************************
+        CONTACT PAGE QUERIES
+    ***************************/
+    .contact-main .wrapper {
+        display: block;
+
+        .contact-form-container {
+            left: 0;
+            top: -100px;
+            margin: 0 auto
+        }
+
+        .socials-address-container {
+            text-align: center;
+            padding: 0;
+            position: relative;
+            top: -50px;
+            margin: 0 auto;
+        
+            .socials-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    } 
+}
+
+/*******************************
+        788 PX QUERIES
+*******************************/
+@media (max-width: 788px) {
+
+      /*******************************
+        NAV QUERIES
+    *******************************/
+    nav {
+        position: fixed;
+        .mobile-ham {
+            display: block;
+        }
+
+        .nav-bar {
+            display: none;
+        }
+
+        .mobile-menu {
+            display: block;
+        }
+    }
+
+    .home-header nav {
+        text-align: right;
+    }
+    
+
+    .contact-header {
+        height: 450px;
+    }
+
+    /***************************
+        HOME PAGE QUERIES
+    ***************************/
+
+    /* HEADER QUERIES */
+    .home-header .wrapper h1 {
+        padding: 30px 0 40px 0;
+    }
+
+    /* DISCOVERING SECTION */
+    .discovering-section {
+        padding: 50px 0;
+
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+
+            .discovering-text {
+                width: 100%;
+                margin-right: 0;
+                text-align: center;
+                flex: 0;
+
+                p {
+                    padding: 10px 0px 20px 0;
+                }
+
+                h2 {
+                    text-align: center;
+                }
+            }
+
+            .discovering-image-container {
+                max-width: 400px;
+                margin-top: 50px;
+
+                img {
+                    box-shadow: none;
+                    border: 5px solid $yellow;
+                }
+            }
+        }
+    }
+
+    /* GALLERY QUERIES */
+    .gallery-section .wrapper {
+        padding: 50px 0;
+        grid-template-columns: repeat(2, 1fr);
+        
+        .gallery-image-container:last-child {
+            display: none;
+        }
+    }
+
+    /* PROGRAMS AND LOCATIONS QUERIES */
+    .programs-locations-section {
+        display: block;
+        width: 85%;
+        margin: 0 auto;
+        padding: 40px 0 50px 0; 
+
+        .locations-article,
+        .programs-article {
+            
+            p {
+                max-width: 100%
+            }
+
+        }
+
+        .programs-text-container,
+        .programs-text-container h2 {
+            text-align: center;
+        }
+
+        .programs-article {
+            bottom: 0;
+            padding-top: 60px;
+        }
+
+        .locations-article {
+            top: 0;
+            padding-bottom: 60px;
+            border-bottom: 4px solid $yellow;
+            .locations-text-container {
+                align-items: center;
+                padding-top: 30px;
+                
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .programs-locations-section .programs-article .programs-text-container {
+        margin-bottom: 30px;
+        padding-bottom: 0;
+    }
+
+    /* BANNER IMAGE QUERIES */
+    .banner-image-container {
+        height: 300px;
+    }
+
+    /* SEARCH SECTION QUERIES */
+    .search-style-section {
+        padding: 40px 0;
+    }
+
+
+    /*******************************
+        BLOG PAGE QUERIES
+    *******************************/
+    .aside-image-container {
+        display: none;
+    }
+
+     /****************************
+            FORM QUERIES
+    ****************************/
+    .comments-form,
+    .contact-form {
+        grid-template-columns: repeat(1, 1fr);
+
+        .form-message-container,
+        button {
+            grid-column: 1 / 2; 
+        }
+    }
+}
+   
+
+/*******************************
+        642 px HOME HEADER
+*******************************/
+
+@media (max-width: 642px) {
+    .home-header {
+
+        height: 400px;
+        .home-header-couch-image {
+            display: none
+        } 
+    }
+
+    .about-section {
+        padding: 40px 0;
+
+        .wrapper article {
+            flex: 1 0 300px;
+        }
+    }
+}
+
+/*******************************
+        611 px QUERIES
+*******************************/
+@media (max-width: 611px) {
+
+
+    /*******************************
+        HOME PAGE QUERIES
+    *******************************/
+
+    /* GENERAL STYLINGS */
+    .home-header .wrapper h1 {
+    @include font-styling($h1-font,3.8rem,left,45px);
+    padding: 50px 0 40px 0;
+    }
+
+    .home-body h2 {
+    @include font-styling($special-font,2.5rem,left,40px,2.1px);
+    }
+
+    .wrapper {
+        width: 95%
+    }
+
+    /* GALLERY QUERIES */
+    .gallery-section .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .gallery-image-container {
+            max-width: 300px;
+
+            &:first-child{
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    /* ABOUT SECTION */
+    .about-section .wrapper article {
+        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: center;
+
+        .fa-stack {
+            margin-bottom: 10px;
+        }
+
+        .about-text-container {
+            padding-left: 0;
+
+            h2,
+            p {
+            text-align: center;
+            }
+        }
+    }
+
+    /* ABOUT ICONS STYLINGS */
+    .fa-home, .fa-users, .fa-file, .fa-phone {
+        padding-left: 0;
+    }
+
+    /* PROGRAMS AND LOCATIONS QUERIES */
+    .programs-locations-section {
+        width: 95%;
+    }
+
+    .programs-locations-section .programs-article .home-right-image,
+    .programs-locations-section .locations-article .home-left-image {
+        img {
+            box-shadow: none;
+            border: 3px solid $yellow;
+        }
+    }
+
+    
+
+
+    /*******************************
+        CONTACT PAGE QUERIES
+    *******************************/
+    .contact-header h1 {
+        padding-top: 80px;
+    }
+
+    .contact-main .wrapper {
+        width: 100%;
+
+        .contact-form-container {
+            padding: 20px;
+        }
+    }
+
+
+    /*******************************
+        BLOG PAGE QUERIES
+    *******************************/
+    .blog-header {
+        height: 400px;
+    }
+
+    .blog-post {
+        top: -50px;
+
+        .comments-section,
+        .blog-text {
+            width: 85%;
+            padding: 0;
+        }
+
+        .blog-text {
+            margin: 0 auto;
+        }
+
+        .comments-section {
+            margin: 30px auto 0 auto;
+            text-align: center;
+
+        .posts-button {
+                display: inline-block;
+                margin-top: 70px;
+            }
+        }
+    }
+
+    .aside-container aside {
+        justify-content: center;
+
+        .mission-statement {
+            width: 100%;
+            
+            h3, p {text-align: center;}
+        }
+
+        .recent-posts-container {
+            display: none;
+        }
+    }  
+}
+
+

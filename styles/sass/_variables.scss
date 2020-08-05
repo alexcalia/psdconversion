@@ -1,0 +1,33 @@
+@mixin header-background($url, $header-height, $background-size) {
+    background-image: $url;
+    background-position: center;
+    background-size: $background-size;
+    background-repeat: no-repeat;
+    height: $header-height;
+}
+
+@mixin font-styling($family,$size,$align,$height,$spacing: normal) {
+    font-family: $family;
+    font-size: $size;
+    text-align: $align;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
+
+@mixin box-shadow-right() {
+    box-shadow: 18px 18px 0px 0px $yellow;
+}
+
+@mixin box-shadow-left() {
+    box-shadow: -18px 18px 0px 0px $yellow;
+}
+
+$black: #151514;
+$ice: #E0FDDF;
+$white: #F5F5F5;
+$evergreen: #065635;
+$yellow: #F8FB05;
+
+$body-font: 'Lato', sans-serif;
+$special-font: 'Kumar One', cursive;
+$h1-font: 'Kumar One Outline', cursive;

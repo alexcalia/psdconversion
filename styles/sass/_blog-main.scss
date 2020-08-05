@@ -1,0 +1,146 @@
+/* GENERAL STYLINGS*/
+
+.blog-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/**************************
+        BLOG POST
+**************************/
+
+.blog-post {
+    max-width: 1000px;
+    position: relative;
+    top: -100px;
+    flex-grow: 1;
+
+    .blog-post-image {
+        
+        max-width: 982px;
+        padding-bottom: 18px;
+        background-color: $white;
+
+        img {
+            box-shadow: 18px 18px 0px 0px $yellow;
+        }
+    }
+
+    .blog-post-text {
+        border-right: 8px solid $yellow;
+        border-bottom: 8px solid $yellow;
+        background: $white;
+        padding: 20px 9% 10px 13%;
+
+        .blog-date-author {
+            font-style: italic;
+            letter-spacing: normal;
+
+            .author-bold {
+                font-weight: 700;;
+            }
+        }
+
+        p {
+            padding: 15px 0;
+        }
+    }
+}
+
+
+/**************************
+        COMMENTS SECTION
+**************************/
+
+.comments-section {
+    padding: 80px 9% 0 13%;
+
+    .comments-container {
+
+        padding: 40px 0 30px 0;
+
+        .message-container {
+            display: flex;
+
+            &:first-child {
+                margin-bottom: 90px;
+            }
+
+            p:first-child {
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            p:last-child {
+                padding-top: 8px;
+            }
+
+            .comment-image {
+                width: 100px;
+                flex-shrink: 0;
+            }
+
+            .comment-text {
+                max-width: 650px;
+                padding-left: 4%;
+            }
+        }
+    }
+
+    .posts-button {
+            display: none;
+    }
+}
+
+
+
+/**************************
+        FORM
+**************************/
+
+.comments-form {
+    textarea {
+        height: 200px;
+    }
+
+    textarea,
+    input {
+        background: $ice;
+    }
+}
+
+/**************************
+        ASIDE SECTION
+**************************/
+.blog-main aside {
+    width: 320px;
+    background-color: $yellow;
+    align-self: flex-start;
+    padding-left: 20px;
+    margin-top: 125px;
+
+    img {
+        position: relative;
+        top: -20px;
+    }
+
+    ul {
+        list-style-type: disc;
+        list-style-position: inside;
+        padding: 10px 0 0 10px;
+
+        a {
+            color: $black;
+        }
+    }
+
+    .recent-posts-container {
+        padding: 30px 0;
+    }
+
+    .mission-statement,
+    .recent-posts-container {
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,45 @@
+form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+
+        input,
+        textarea {
+            width: 100%;
+        }
+
+        input {
+            padding: 25px 20px;
+        }
+
+        .form-message-container,
+        button {
+            grid-column: 1 /3;
+        }
+
+        .form-email-container input,
+        .form-name-container input {
+            border: none;
+            border-bottom: 2px solid $evergreen;
+        }
+
+        textarea {
+            resize: none;
+            height: 250px;
+            border: 2px solid $evergreen;
+            padding: 30px 20px;
+        }
+
+        ::placeholder {
+            opacity: 1;
+            text-transform: uppercase;
+            @include font-styling($body-font,2rem,left,32px 2px);
+        }
+
+        input:focus,
+        textarea:focus {
+            border: 4px solid $evergreen;
+            background: #9ee49c;
+        }
+    }

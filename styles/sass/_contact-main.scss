@@ -1,0 +1,58 @@
+/****************************/
+/*      GENERAL STYLES      */
+/****************************/
+.contact-main .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/****************************/
+/*      FORM SECTION        */
+/****************************/
+.contact-form-container {
+    position: relative;
+    top: -120px;
+    left: -50px;
+    max-width: 900px;
+    padding: 65px;
+    background-color: white;
+    @include box-shadow-right;
+    flex-grow: 1;
+}
+
+/****************************/
+/*      SOCIALS SECTION     */
+/****************************/
+.socials-address-container {
+    max-width: 300px;
+    padding: 100px 20px 0 10px;
+
+    .socials-container {
+        
+        .social-links {
+            display: flex;
+            width: 166px;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+
+        a {
+            color: $black;
+            display: inline-block;
+            padding: 20px 0;
+
+            i {
+                color: $evergreen;
+                font-size: 1.2em;
+                transition-duration: 0.3s;
+            }
+
+            &:hover i,
+            &:focus i{
+            transform: scale(1.5);
+            }
+        }     
+    }
+}
+
